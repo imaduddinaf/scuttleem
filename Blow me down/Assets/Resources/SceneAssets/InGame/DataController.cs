@@ -12,6 +12,9 @@ public class DataController : MonoBehaviour
     private PirateSpawnerController pirateSpawnerController;
     private int numberOfPirates;
 
+    // ingame menu controller
+    private InGameMenuController inGameMenuController;
+
 	// Use this for initialization
 	void Start () 
     {
@@ -53,6 +56,8 @@ public class DataController : MonoBehaviour
 
         pirateSpawnerController = GameObject.Find("PirateSpawnerController").GetComponent<PirateSpawnerController>();
         numberOfPirates = 0;
+
+        inGameMenuController = GameObject.Find("InGameMenuController").GetComponent<InGameMenuController>();
     }
 
     // get money from destroyed pirate
@@ -63,4 +68,10 @@ public class DataController : MonoBehaviour
         pirate.Destroy();
     }
 
+    // end of the game
+    public void End()
+    {
+        inGameMenuController.Congratulations();
+        //Debug.Log("end");
+    }
 }

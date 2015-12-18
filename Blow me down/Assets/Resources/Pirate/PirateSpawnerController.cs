@@ -105,5 +105,16 @@ public class PirateSpawnerController : MonoBehaviour
     {
         pirates.Remove(obj);
         dataController.GetMoneyFromDestroyedPirate(obj);
+
+        IShip pirate = obj.GetComponent<IShip>();
+        pirate.Destroy();
+    }
+
+    // handle pirate that killing player
+    public void HandlePirateKillingPlayer(GameObject obj)
+    {
+        pirates.Remove(obj);
+        dataController.End();
+        //Debug.Log("awwww");
     }
 }

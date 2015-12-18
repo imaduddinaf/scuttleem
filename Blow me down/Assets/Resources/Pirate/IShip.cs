@@ -3,6 +3,7 @@ using System.Collections;
 
 public interface IShip 
 {
+    float Speed { get; set; }
     void Init();
     void Move();
     void Die();
@@ -11,4 +12,5 @@ public interface IShip
     void Destroy();
     void SetSpawner(PirateSpawnerController spawner);
     void GetDamage(int damage);
+    void KillThePlayer();
 }

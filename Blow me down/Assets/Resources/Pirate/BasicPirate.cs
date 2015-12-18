@@ -39,15 +39,17 @@ public class BasicPirate : MonoBehaviour, IShip
     {
         healthPoint = 60;
         moneyWorth = 10;
-        heading = new Vector2(-1.0f, -0.575f);
-        speed = 1.0f;
+        heading = new Vector2(-1.0f, 0.0f);
+        speed = 0.5f;
         destroyed = false;
+               
     }
 
     //
     public void Move()
     {
         GetComponent<Rigidbody2D>().velocity = heading * speed;
+        //transform.Translate((new Vector2(-0.01f, 0.0f)));
     }
 
     //
@@ -88,6 +90,13 @@ public class BasicPirate : MonoBehaviour, IShip
     }
 
     //
+    public void KillThePlayer()
+    {
+        destroyed = true;
+        pirateSpawnerController.HandlePirateKillingPlayer(this.gameObject);
+    }
+
+    //
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Bullet")
@@ -99,7 +108,25 @@ public class BasicPirate : MonoBehaviour, IShip
 
         if (col.tag == "MustNotInvadedLineEver")
         {
-            Die();
+            KillThePlayer();
+            Debug.Log("ahhhhhh");
+        }
+
+        if (col.tag == "Fire")
+        {
+            Debug.Log("fireeeee");
+        }
+    }
+
+    public float Speed
+    {
+        get
+        {
+            return speed;
+        }
+        set
+        {
+            speed = value;
         }
     }
 }
