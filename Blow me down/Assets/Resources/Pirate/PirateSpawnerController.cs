@@ -6,7 +6,9 @@ public class PirateSpawnerController : MonoBehaviour
 {
     // pirate object
     private List<GameObject> pirates;
-    private GameObject basicPirate;
+    public GameObject basicPirate;
+    public GameObject mediumPirate;
+    public GameObject bossPirateOne;
 
     // spawner
     private float spawnDelay;
@@ -75,7 +77,7 @@ public class PirateSpawnerController : MonoBehaviour
     //
     void LoadPirate()
     {
-        basicPirate = Resources.Load<GameObject>("Pirate/BasicPirate");
+        //basicPirate = Resources.Load<GameObject>("Pirate/BasicPirate");
     }
 
     //
