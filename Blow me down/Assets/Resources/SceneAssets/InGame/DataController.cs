@@ -40,11 +40,13 @@ public class DataController : MonoBehaviour
     public int PlayerWave
     {
         get { return wave; }
+		set { wave = value; }
     }
 
     public int PlayerMiniWave
     {
         get { return miniWave; }
+		set { miniWave = value; }
     }
 
     //
