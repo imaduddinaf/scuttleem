@@ -57,12 +57,9 @@
      <Compile Include="Assets\Resources\Pirate\IShip.cs" />
      <Compile Include="Assets\Resources\Pirate\MediumPirate.cs" />
      <Compile Include="Assets\Resources\Pirate\PirateSpawnerController.cs" />
-<<<<<<< HEAD
+     <Compile Include="Assets\Resources\Pirate\RandomController.cs" />
      <Compile Include="Assets\Resources\Pirate\SpawnedTextBehaviour.cs" />
      <Compile Include="Assets\Resources\SceneAssets\Ensiklopedia\EnsiklopediaController.cs" />
-=======
-     <Compile Include="Assets\Resources\Pirate\RandomController.cs" />
->>>>>>> 0723f18fdda916680c41e130dba701257bf8401f
      <Compile Include="Assets\Resources\SceneAssets\InGame\ActionButtonController.cs" />
      <Compile Include="Assets\Resources\SceneAssets\InGame\ContainerController.cs" />
      <Compile Include="Assets\Resources\SceneAssets\InGame\DataController.cs" />
