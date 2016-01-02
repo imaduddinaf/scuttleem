@@ -65,7 +65,7 @@ public class DataController : MonoBehaviour
     {
         IShip pirate = obj.GetComponent<IShip>();
         money += pirate.MoneyWorth();
-        pirate.Destroy();
+        //pirate.Destroy();
     }
 
     // end of the game

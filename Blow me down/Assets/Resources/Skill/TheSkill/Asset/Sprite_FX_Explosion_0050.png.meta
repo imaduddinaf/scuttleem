@@ -1,0 +1,606 @@
+fileFormatVersion: 2
+guid: a92263d58352fe34fa237efa15acb22b
+timeCreated: 1451523595
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprite_FX_Explosion_0050_0
+    21300002: Sprite_FX_Explosion_0050_1
+    21300004: Sprite_FX_Explosion_0050_2
+    21300006: Sprite_FX_Explosion_0050_3
+    21300008: Sprite_FX_Explosion_0050_4
+    21300010: Sprite_FX_Explosion_0050_5
+    21300012: Sprite_FX_Explosion_0050_6
+    21300014: Sprite_FX_Explosion_0050_7
+    21300016: Sprite_FX_Explosion_0050_8
+    21300018: Sprite_FX_Explosion_0050_9
+    21300020: Sprite_FX_Explosion_0050_10
+    21300022: Sprite_FX_Explosion_0050_11
+    21300024: Sprite_FX_Explosion_0050_12
+    21300026: Sprite_FX_Explosion_0050_13
+    21300028: Sprite_FX_Explosion_0050_14
+    21300030: Sprite_FX_Explosion_0050_15
+    21300032: Sprite_FX_Explosion_0050_16
+    21300034: Sprite_FX_Explosion_0050_17
+    21300036: Sprite_FX_Explosion_0050_18
+    21300038: Sprite_FX_Explosion_0050_19
+    21300040: Sprite_FX_Explosion_0050_20
+    21300042: Sprite_FX_Explosion_0050_21
+    21300044: Sprite_FX_Explosion_0050_22
+    21300046: Sprite_FX_Explosion_0050_23
+    21300048: Sprite_FX_Explosion_0050_24
+    21300050: Sprite_FX_Explosion_0050_25
+    21300052: Sprite_FX_Explosion_0050_26
+    21300054: Sprite_FX_Explosion_0050_27
+    21300056: Sprite_FX_Explosion_0050_28
+    21300058: Sprite_FX_Explosion_0050_29
+    21300060: Sprite_FX_Explosion_0050_30
+    21300062: Sprite_FX_Explosion_0050_31
+    21300064: Sprite_FX_Explosion_0050_32
+    21300066: Sprite_FX_Explosion_0050_33
+    21300068: Sprite_FX_Explosion_0050_34
+    21300070: Sprite_FX_Explosion_0050_35
+    21300072: Sprite_FX_Explosion_0050_36
+    21300074: Sprite_FX_Explosion_0050_37
+    21300076: Sprite_FX_Explosion_0050_38
+    21300078: Sprite_FX_Explosion_0050_39
+    21300080: Sprite_FX_Explosion_0050_40
+    21300082: Sprite_FX_Explosion_0050_41
+    21300084: Sprite_FX_Explosion_0050_42
+    21300086: Sprite_FX_Explosion_0050_43
+    21300088: Sprite_FX_Explosion_0050_44
+    21300090: Sprite_FX_Explosion_0050_45
+    21300092: Sprite_FX_Explosion_0050_46
+    21300094: Sprite_FX_Explosion_0050_47
+    21300096: Sprite_FX_Explosion_0050_48
+    21300098: Sprite_FX_Explosion_0050_49
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprite_FX_Explosion_0050_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 534
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 536
+        width: 70
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 534
+        width: 82
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 534
+        width: 70
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_4
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 541
+        width: 88
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_5
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 554
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 539
+        width: 91
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 534
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 470
+        width: 93
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_9
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 468
+        width: 95
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 466
+        width: 104
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_11
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 463
+        width: 106
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_12
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 460
+        width: 110
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_13
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 388
+        width: 112
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 387
+        width: 121
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_15
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 387
+        width: 112
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_16
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 384
+        width: 113
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_17
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 311
+        width: 115
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 311
+        width: 114
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_19
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 310
+        width: 114
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_20
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 307
+        width: 113
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_21
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 233
+        width: 114
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 233
+        width: 108
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_23
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 264
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_24
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 231
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_25
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 234
+        width: 111
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_26
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 153
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_27
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 156
+        width: 90
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_28
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 157
+        width: 90
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_29
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 157
+        width: 92
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_30
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 159
+        width: 81
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_31
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 60
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_32
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 35
+        width: 105
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_33
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 85
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_34
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 86
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_35
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 90
+        width: 68
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_36
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 89
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_37
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 133
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_38
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 139
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_39
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 92
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_40
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 106
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_41
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 91
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_42
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 27
+        width: 54
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_43
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 37
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 51
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_45
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 40
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_46
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 39
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_47
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 30
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_48
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 42
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Explosion_0050_49
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 28
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

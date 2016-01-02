@@ -9,4 +9,5 @@ public interface ICannon
     void LoadBullet();
     void DestroyBullet(GameObject obj);
     void Destroy();
+    void AddBullet(int n);
 }

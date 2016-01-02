@@ -53,6 +53,11 @@ public class BasicBullet : MonoBehaviour, IBullet
     {
         this.cannon = cannon;
     }
+    
+    public void GetBulletDrop(int n)
+    {
+        cannon.AddBullet(n);
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {

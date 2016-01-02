@@ -23,12 +23,12 @@ public class MainMenuController : MonoBehaviour
 
     public void Almanac()
     {
-
+        Application.LoadLevel("Ensiklopedia");
     }
 
     public void HighScore()
     {
-
+        Application.LoadLevel("HighScore");
     }
 
     public void Sound()

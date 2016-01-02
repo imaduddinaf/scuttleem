@@ -9,4 +9,5 @@ public interface IBullet
     void SetDamage(int damage);
     void Die();
     void Destroy();
+    void GetBulletDrop(int n);
 }

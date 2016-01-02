@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ActionButtonController : MonoBehaviour 
 {
@@ -9,12 +10,20 @@ public class ActionButtonController : MonoBehaviour
     public GameObject redCannon;
     public GameObject blueCannon;
 
+    public List<GameObject> cannons;
+
     private SkillController skillController;
 
 	// Use this for initialization
 	void Start () 
     {
         skillController = GameObject.Find("SkillController").GetComponent<SkillController>();
+
+        cannons = new List<GameObject>(4);
+        cannons.Add(GameObject.FindGameObjectWithTag("YellowCannon"));
+        cannons.Add(GameObject.FindGameObjectWithTag("GreenCannon"));
+        cannons.Add(GameObject.FindGameObjectWithTag("RedCannon"));
+        cannons.Add(GameObject.FindGameObjectWithTag("BlueCannon"));
 	}
 	
 	// Update is called once per frame
@@ -26,35 +35,35 @@ public class ActionButtonController : MonoBehaviour
     // yellow cannon
     public void YellowCannonFire()
     {
-        yellowCannon = GameObject.FindGameObjectWithTag("YellowCannon");
-        yellowCannon.GetComponent<ICannon>().Attack();
+        //yellowCannon = GameObject.FindGameObjectWithTag("YellowCannon");
+        cannons[0].GetComponent<ICannon>().Attack();
     }
 
     // green cannon
     public void GreenCannonFire()
     {
-        greenCannon = GameObject.FindGameObjectWithTag("GreenCannon");
-        greenCannon.GetComponent<ICannon>().Attack();
+        //greenCannon = GameObject.FindGameObjectWithTag("GreenCannon");
+        cannons[1].GetComponent<ICannon>().Attack();
     }
 
     // red cannon
     public void RedCannonFire()
     {
-        redCannon = GameObject.FindGameObjectWithTag("RedCannon");
-        redCannon.GetComponent<ICannon>().Attack();
+        //redCannon = GameObject.FindGameObjectWithTag("RedCannon");
+        cannons[2].GetComponent<ICannon>().Attack();
     }
 
     // blue cannon
     public void BlueCannonFire()
     {
-        blueCannon = GameObject.FindGameObjectWithTag("BlueCannon");
-        blueCannon.GetComponent<ICannon>().Attack();
+        //blueCannon = GameObject.FindGameObjectWithTag("BlueCannon");
+        cannons[3].GetComponent<ICannon>().Attack();
     }
 
-    public void Up()
+    public void Up(int idx)
     {
-        yellowCannon = GameObject.FindGameObjectWithTag("YellowCannon");
-        yellowCannon.GetComponent<ICannon>().Upgrade();
+        //yellowCannon = GameObject.FindGameObjectWithTag("YellowCannon");
+        cannons[idx].GetComponent<ICannon>().Upgrade();
     }
 
     public void FireSkill()

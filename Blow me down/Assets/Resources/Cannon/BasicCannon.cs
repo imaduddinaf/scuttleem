@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -11,6 +12,8 @@ public class BasicCannon : MonoBehaviour, ICannon, INormalCannon
     // attribute
     public int attackDamage;
     public int bulletSpeed;
+    public int bulletNumber;
+    private int lastBulletNumber;
     public float attackSpeed;
     public float attackCooldown;
     private bool isCooldown;
@@ -21,6 +24,9 @@ public class BasicCannon : MonoBehaviour, ICannon, INormalCannon
     private Animator animator;
     private const int IDLE = 1;
     private const int SHOT = 1;
+
+    // statusUI
+    public GameObject statusUI;
 
 	// Use this for initialization
 	void Start () 
@@ -40,6 +46,13 @@ public class BasicCannon : MonoBehaviour, ICannon, INormalCannon
             isCooldown = false;
             attackCooldown = attackSpeed;
         }
+
+        if (lastBulletNumber != bulletNumber)
+        {
+            statusUI.transform.Find("BulletCount").GetComponent<Text>().text = bulletNumber.ToString();
+        }
+        lastBulletNumber = bulletNumber;
+
 	}
 
     //
@@ -55,6 +68,10 @@ public class BasicCannon : MonoBehaviour, ICannon, INormalCannon
         LoadBullet();
         animator = GetComponent<Animator>();
         spawner = transform.Find("spawner").gameObject;
+
+        statusUI = GameObject.FindGameObjectWithTag(this.gameObject.tag + "StatusUI");
+        statusUI.transform.Find("BulletCount").GetComponent<Text>().text = bulletNumber.ToString();
+        lastBulletNumber = bulletNumber;
     }
 
     //
@@ -92,6 +109,9 @@ public class BasicCannon : MonoBehaviour, ICannon, INormalCannon
     //
     public void SpawnBullet(Vector2 direction)
     {
+        if (bulletNumber <= 0)
+            return;
+        bulletNumber--;
         GameObject bulletSpawn = Instantiate(bullet);
         bulletSpawn.GetComponent<IBullet>().Shot(direction, bulletSpeed);
         bulletSpawn.GetComponent<IBullet>().SetDamage(attackDamage);
@@ -112,5 +132,10 @@ public class BasicCannon : MonoBehaviour, ICannon, INormalCannon
     public void Destroy()
     {
         GameObject.Destroy(this.gameObject);
+    }
+
+    public void AddBullet(int n)
+    {
+        bulletNumber += n;
     }
 }

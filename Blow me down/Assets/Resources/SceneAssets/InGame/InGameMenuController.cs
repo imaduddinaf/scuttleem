@@ -50,7 +50,7 @@ public class InGameMenuController : MonoBehaviour
         pMiniWave = dataController.PlayerMiniWave;
 
         money = GameObject.Find("Money").GetComponent<Text>();
-        wave = GameObject.Find("Score").GetComponent<Text>();
+        wave = GameObject.Find("Wave").GetComponent<Text>();
         SetMoneyText(pMoney);
         SetWaveText(pWave, pMiniWave);
 
@@ -66,13 +66,13 @@ public class InGameMenuController : MonoBehaviour
     // set money text
     void SetMoneyText(int m)
     {
-        money.text = "Money = " + m;
+        money.text = m + " $";
     }
 
     // set wave : miniwave text
     void SetWaveText(int w, int mw)
     {
-        wave.text = "WAVE ( " + w + " : " + mw + " )";
+        wave.text = w.ToString();
     }
 
     // restart game

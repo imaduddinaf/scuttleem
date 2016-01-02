@@ -57,11 +57,14 @@
      <Compile Include="Assets\Resources\Pirate\IShip.cs" />
      <Compile Include="Assets\Resources\Pirate\MediumPirate.cs" />
      <Compile Include="Assets\Resources\Pirate\PirateSpawnerController.cs" />
+     <Compile Include="Assets\Resources\Pirate\SpawnedTextBehaviour.cs" />
+     <Compile Include="Assets\Resources\SceneAssets\Ensiklopedia\EnsiklopediaController.cs" />
      <Compile Include="Assets\Resources\SceneAssets\InGame\ActionButtonController.cs" />
      <Compile Include="Assets\Resources\SceneAssets\InGame\ContainerController.cs" />
      <Compile Include="Assets\Resources\SceneAssets\InGame\DataController.cs" />
      <Compile Include="Assets\Resources\SceneAssets\InGame\InGameMenuController.cs" />
      <Compile Include="Assets\Resources\SceneAssets\MainMenu\MainMenuController.cs" />
+     <Compile Include="Assets\Resources\SceneAssets\MainMenu\MasterData.cs" />
      <Compile Include="Assets\Resources\Skill\SkillController\FireSkillController.cs" />
      <Compile Include="Assets\Resources\Skill\SkillController\ISkillController.cs" />
      <Compile Include="Assets\Resources\Skill\SkillController\IceSkillController.cs" />
