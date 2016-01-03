@@ -17,6 +17,15 @@ public class InGameMenuController : MonoBehaviour
     private int pWave;
     private int pMiniWave;
 
+    private Text killsText;
+    private Text wavesText;
+
+    void Awake()
+    {
+        killsText = GameObject.Find("CongratsLayer").transform.Find("Animated").transform.Find("Kills").GetComponent<Text>();
+        wavesText = GameObject.Find("CongratsLayer").transform.Find("Animated").transform.Find("Waves").GetComponent<Text>();
+    }
+
 	// Use this for initialization
 	void Start () 
     {
@@ -88,6 +97,7 @@ public class InGameMenuController : MonoBehaviour
     public void GameExit()
     {
         //exit logic
+        Time.timeScale = 1;
         Application.LoadLevel("MainMenu");
         //Application.Quit();
     }
@@ -113,6 +123,10 @@ public class InGameMenuController : MonoBehaviour
         float score = 0;
         int waveScore = dataController.PlayerWave;
         float killScore = dataController.PlayerKill;
+
+        wavesText.text = waveScore.ToString();
+        killsText.text = ((int) killScore).ToString();
+
         int killDigit = 0;
         int someNumber = 1;
         for (int i = 1; i < 1000000; i++)
@@ -129,7 +143,8 @@ public class InGameMenuController : MonoBehaviour
             someNumber *= 10;
         }
 
-        killScore = killScore / (10 * killDigit);
+        if(killDigit > 0)
+            killScore = killScore / (10 * killDigit);
         score = waveScore + killScore;
         Debug.Log("wave = " + waveScore);
         Debug.Log("killdigit = " + killDigit);

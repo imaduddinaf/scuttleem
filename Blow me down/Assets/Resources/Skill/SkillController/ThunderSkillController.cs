@@ -22,6 +22,11 @@ public class ThunderSkillController : MonoBehaviour, ISkillController
     private Button button;
     private Text textDelay;
 
+    void Awake()
+    {
+        spawnArea = GameObject.Find("ThunderArea");
+    }
+
 	// Use this for initialization
 	void Start ()
     {
@@ -34,7 +39,6 @@ public class ThunderSkillController : MonoBehaviour, ISkillController
         button = GameObject.Find("ThunderButton").GetComponent<Button>();
         textDelay = button.transform.Find("Delay").GetComponent<Text>();
         textDelay.text = READY;
-        spawnArea = GameObject.Find("ThunderArea");
 	}
 	
 	// Update is called once per frame

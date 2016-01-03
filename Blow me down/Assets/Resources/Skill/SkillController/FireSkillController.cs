@@ -21,6 +21,11 @@ public class FireSkillController : MonoBehaviour, ISkillController
     private Button button;
     private Text textDelay;
 
+    void Awake()
+    {
+        laneSelector = GameObject.Find("FireSkillLaneSelector");
+    }
+
 	// Use this for initialization
 	void Start () 
     {
@@ -32,12 +37,11 @@ public class FireSkillController : MonoBehaviour, ISkillController
         button = GameObject.Find("FireButton").GetComponent<Button>();
         textDelay = button.transform.Find("Delay").GetComponent<Text>();
         textDelay.text = READY;
-        laneSelector = GameObject.Find("FireSkillLaneSelector");
         spawnPosition = new List<Vector2>();
         for (int i = 1; i <= 4; i++)
         {
             GameObject spawnPoint = GameObject.Find("Spawner" + i);
-            spawnPosition.Add(new Vector2(2.8f, spawnPoint.transform.position.y - 0.2f));
+            spawnPosition.Add(new Vector2(-2.41f, spawnPoint.transform.position.y - 0.2f));
         }
 	}
 	

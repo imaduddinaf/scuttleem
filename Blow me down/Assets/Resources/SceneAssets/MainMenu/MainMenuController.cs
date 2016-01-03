@@ -12,7 +12,6 @@ public class MainMenuController : MonoBehaviour
 	void Start () 
     {
         masterData = GameObject.Find("MasterData").GetComponent<MasterData>();
-        GetHighScore();
 	}
 	
 	// Update is called once per frame
@@ -39,6 +38,7 @@ public class MainMenuController : MonoBehaviour
     public void ShowHighScore()
     {
         highScoreContainer.GetComponent<ContainerController>().Open();
+        GetHighScore();
     }
 
     public void HideHighScore()
