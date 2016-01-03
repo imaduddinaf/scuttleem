@@ -118,8 +118,9 @@ public class RandomController : MonoBehaviour {
 	}
 
 	void SetAmountPirates () {
-		if (wave >=1 || wave <= 5)
+		if (wave >= 1 || wave <= 5) {
 			amountBasicPirate += 1;
+		}
 		else if (wave >= 6 || wave <= 15)
 			amountBasicPirate += 2;
 		if ((wave % 3) == 0) {

@@ -1,12 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Pirate\PirateSpawnerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Pirate\SoundPirate.cs">
     <Files>
-      <File FileName="Assets\Resources\Pirate\PirateSpawnerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\MediumPirate.cs" Line="13" Column="6" />
+      <File FileName="Assets\Resources\Pirate\PirateSpawnerController.cs" Line="212" Column="5" />
       <File FileName="Assets\Resources\Pirate\RandomController.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\SceneAssets\InGame\DataController.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Skill\SkillController\FireSkillController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Pirate\AbstractShip.cs" Line="107" Column="19" />
+      <File FileName="Assets\Resources\Pirate\AbstractShip.cs" Line="101" Column="44" />
+      <File FileName="Assets\Resources\SceneAssets\InGame\InGameMenuController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\BasicPirate.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\IShip.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\SceneAssets\InGame\ActionButtonController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\SoundPirate.cs" Line="16" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
