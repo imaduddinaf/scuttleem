@@ -31,7 +31,7 @@ public class PirateSpawnerController : MonoBehaviour
 	private int countDestroyShip = 0;
 
 	//audio if die
-	public AudioClip pirateDestroy;
+	//public AudioClip pirateDestroy;
 
     // datacontroller
     DataController dataController;

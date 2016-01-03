@@ -76,19 +76,12 @@
      <Compile Include="Assets\Resources\Skill\TheSkill\ISkill.cs" />
      <Compile Include="Assets\Resources\Skill\TheSkill\IceSkill.cs" />
      <Compile Include="Assets\Resources\Skill\TheSkill\ThunderSkill.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Resources\Sound\MusicController.cs" />
-=======
->>>>>>> 34788a8add43ff299203e824bb0de785d480bdaf
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
-<<<<<<< HEAD
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-=======
- <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
->>>>>>> 34788a8add43ff299203e824bb0de785d480bdaf
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
