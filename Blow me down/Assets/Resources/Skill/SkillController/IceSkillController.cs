@@ -10,6 +10,7 @@ public class IceSkillController : MonoBehaviour, ISkillController
 
     //attribute
     public GameObject iceSkill;
+    public GameObject iceCircle;
     private List<GameObject> iceSkills;
     public float cooldown;
     private float timePassed;
@@ -48,6 +49,8 @@ public class IceSkillController : MonoBehaviour, ISkillController
     {
         if (state != IDLE)
             return;
+
+        Instantiate(iceCircle);
 
         List<GameObject> pirates = pirateSpawnerController.Pirates;
         for (int i = 0; i < pirates.Count; i++)

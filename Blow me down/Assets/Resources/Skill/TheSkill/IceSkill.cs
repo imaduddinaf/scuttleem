@@ -30,9 +30,11 @@ public class IceSkill : MonoBehaviour, ISkill
         if (targetShip != null)
         {
             transform.position = targetShip.transform.position;
+            if (targetShip.GetComponent<IShip>().IsDestroyed())
+                this.Destroy();
         }
 
-        if (targetShip.GetComponent<IShip>().IsDestroyed() || timePassed > duration)
+        if(timePassed > duration)
         {
             this.Destroy();
         }
