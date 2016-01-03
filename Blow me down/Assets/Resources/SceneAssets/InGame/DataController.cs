@@ -16,6 +16,9 @@ public class DataController : MonoBehaviour
     // ingame menu controller
     private InGameMenuController inGameMenuController;
 
+	public float speedBasic;
+	public float speedMedium;
+
 	// Use this for initialization
 	void Start () 
     {

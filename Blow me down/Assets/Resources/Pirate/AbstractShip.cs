@@ -14,6 +14,7 @@ public abstract class AbstractShip : MonoBehaviour, IShip
     private Vector2 heading;
     private bool destroyed = false;
     private bool isDestroyedByCannon = false;
+	public AudioClip soundDie;
 
     // information
     public string shipName;
@@ -24,6 +25,7 @@ public abstract class AbstractShip : MonoBehaviour, IShip
     private ActionButtonController actionButtonController;
     private MasterData masterData;
     private DataController dataController;
+	private SoundPirate soundPirate;
 
     // Use this for initialization
     void Start()
@@ -64,6 +66,7 @@ public abstract class AbstractShip : MonoBehaviour, IShip
         actionButtonController = GameObject.Find("ActionButtonController").GetComponent<ActionButtonController>();
         masterData = GameObject.Find("MasterData").GetComponent<MasterData>();
         dataController = GameObject.Find("DataController").GetComponent<DataController>();
+		soundPirate = GameObject.Find ("SoundPirate").GetComponent<SoundPirate> ();
     }
 
     public void Move()
@@ -94,6 +97,8 @@ public abstract class AbstractShip : MonoBehaviour, IShip
 
     public void Destroy()
     {
+		//GetComponent <AudioSource> ().PlayOneShot (soundDie);
+		soundPirate.SoundPirates (this.GetId ());
         SpawnBulletDropAmount();
         if(!isDestroyedByCannon)
         {
@@ -111,7 +116,9 @@ public abstract class AbstractShip : MonoBehaviour, IShip
         }
         dataController.PlayerKill++;
         Debug.Log("kill = " + dataController.PlayerKill);
+		//GetComponent <AudioSource> ().PlayOneShot (soundDie);
         GameObject.Destroy(this.gameObject);
+		//GetComponent <AudioSource> ().PlayOneShot (soundDie);
     }
 
     public void SetSpawner(PirateSpawnerController spawner)
@@ -147,11 +154,14 @@ public abstract class AbstractShip : MonoBehaviour, IShip
     {
         if (col.tag == "Bullet")
         {
+			//GetComponent <AudioSource> ().PlayOneShot (soundDie);
             this.GetDamage(col.transform.GetComponent<IBullet>().Damage());
             if (healthPoint <= 0 && !IsDestroyed())
             {
                 col.transform.GetComponent<IBullet>().GetBulletDrop(bulletDrop);
                 isDestroyedByCannon = true;
+				//print ("dan");
+				//GetComponent <AudioSource> ().PlayOneShot (soundDie);
             }
             col.transform.GetComponent<IBullet>().Die();
         }

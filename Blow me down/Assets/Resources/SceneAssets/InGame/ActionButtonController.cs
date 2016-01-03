@@ -10,6 +10,8 @@ public class ActionButtonController : MonoBehaviour
     public GameObject redCannon;
     public GameObject blueCannon;
 
+	public AudioClip explosionCannon;
+
     public List<GameObject> cannons;
 
     private SkillController skillController;
@@ -37,6 +39,7 @@ public class ActionButtonController : MonoBehaviour
     {
         //yellowCannon = GameObject.FindGameObjectWithTag("YellowCannon");
         cannons[0].GetComponent<ICannon>().Attack();
+		GetComponent <AudioSource> ().PlayOneShot (explosionCannon);
     }
 
     // green cannon
@@ -44,6 +47,7 @@ public class ActionButtonController : MonoBehaviour
     {
         //greenCannon = GameObject.FindGameObjectWithTag("GreenCannon");
         cannons[1].GetComponent<ICannon>().Attack();
+		GetComponent <AudioSource> ().PlayOneShot (explosionCannon);
     }
 
     // red cannon
@@ -51,6 +55,7 @@ public class ActionButtonController : MonoBehaviour
     {
         //redCannon = GameObject.FindGameObjectWithTag("RedCannon");
         cannons[2].GetComponent<ICannon>().Attack();
+		GetComponent <AudioSource> ().PlayOneShot (explosionCannon);
     }
 
     // blue cannon
@@ -58,6 +63,8 @@ public class ActionButtonController : MonoBehaviour
     {
         //blueCannon = GameObject.FindGameObjectWithTag("BlueCannon");
         cannons[3].GetComponent<ICannon>().Attack();
+		print ("1");
+		GetComponent <AudioSource> ().PlayOneShot (explosionCannon);
     }
 
     public void Up(int idx)

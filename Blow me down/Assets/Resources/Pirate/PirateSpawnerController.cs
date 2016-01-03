@@ -28,8 +28,10 @@ public class PirateSpawnerController : MonoBehaviour
 	private int[] countBasicPirate = new[] {0, 0, 0, 0};
 	private int[] countMediumPirate = new[] {0, 0, 0, 0};
 	private int[] countBossPirate = new[] {0, 0, 0, 0};
-
 	private int countDestroyShip = 0;
+
+	//audio if die
+	//public AudioClip pirateDestroy;
 
     // datacontroller
     DataController dataController;
@@ -66,6 +68,7 @@ public class PirateSpawnerController : MonoBehaviour
 					spawnedPirate.transform.position = spawnPositionArray[i];
 					//print(i);
 					spawnedPirate.GetComponent<IShip>().SetSpawner(this.GetComponent<PirateSpawnerController>());
+					//spawnedPirate.GetComponent<IShip>().Speed(5.0f);
 					pirates.Add(spawnedPirate);
 					delayBasicPirate[i] += randomController.RangeRandomGenerator(1);
 					countBasicPirate[i]--;
@@ -206,6 +209,7 @@ public class PirateSpawnerController : MonoBehaviour
 
         IShip pirate = obj.GetComponent<IShip>();
         pirate.Destroy();
+		//GetComponent <AudioSource> ().PlayOneShot (pirateDestroy);
 		countDestroyShip++;
     }
 
