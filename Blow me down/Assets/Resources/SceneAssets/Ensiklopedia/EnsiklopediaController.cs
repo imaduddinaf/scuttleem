@@ -37,4 +37,10 @@ public class EnsiklopediaController : MonoBehaviour
         pirateDescription.GetComponent<Text>().text = masterData.piratePrefabs[idx].GetComponent<IShip>().ShipDescription;
         pirateKillCount.GetComponent<Text>().text = "Kill count : " + masterData.killCount[idx].ToString();
     }
+	public void GameExit()
+	{
+		//exit logic
+		Application.LoadLevel("MainMenu");
+		//Application.Quit();
+	}
 }

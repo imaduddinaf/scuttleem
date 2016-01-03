@@ -1,8 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Pirate\PirateSpawnerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\SceneAssets\InGame\DataController.cs">
     <Files>
-      <File FileName="Assets\Resources\Pirate\PirateSpawnerController.cs" Line="34" Column="30" />
+      <File FileName="Assets\Resources\Sound\MusicController.cs" Line="27" Column="24" />
+      <File FileName="..\..\Amazing TPG\TVRunner\TVRunner\Assets\TVRunner\Sound + Font\font + BGM\SoundManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\SceneAssets\Ensiklopedia\EnsiklopediaController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\SceneAssets\InGame\DataController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\RandomController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\SceneAssets\InGame\ContainerController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
