@@ -1,5 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Pirate\SoundPirate.cs">
     <Files>
       <File FileName="Assets\Resources\Pirate\MediumPirate.cs" Line="13" Column="6" />
@@ -13,6 +14,17 @@
       <File FileName="Assets\Resources\Pirate\IShip.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\SceneAssets\InGame\ActionButtonController.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Pirate\SoundPirate.cs" Line="16" Column="57" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Pirate\AbstractShip.cs">
+    <Files>
+      <File FileName="Assets\Resources\Pirate\AbstractShip.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\BasicPirate.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\PirateSpawnerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\RandomController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\SceneAssets\InGame\DataController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Skill\SkillController\FireSkillController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Pirate\IShip.cs" Line="1" Column="1" />
+>>>>>>> 34788a8add43ff299203e824bb0de785d480bdaf
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
