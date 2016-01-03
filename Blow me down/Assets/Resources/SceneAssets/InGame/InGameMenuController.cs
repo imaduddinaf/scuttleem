@@ -12,6 +12,7 @@ public class InGameMenuController : MonoBehaviour
 
     // datacontroller
     private DataController dataController;
+    private MasterData masterData;
     private int pMoney;
     private int pWave;
     private int pMiniWave;
@@ -44,6 +45,7 @@ public class InGameMenuController : MonoBehaviour
     {
         Time.timeScale = 1;
 
+        masterData = GameObject.Find("MasterData").GetComponent<MasterData>();
         dataController = GameObject.Find("DataController").GetComponent<DataController>();
         pMoney = dataController.PlayerMoney;
         pWave = dataController.PlayerWave;
@@ -86,8 +88,8 @@ public class InGameMenuController : MonoBehaviour
     public void GameExit()
     {
         //exit logic
-        //Application.LoadLevel("Main Menu");
-        Application.Quit();
+        Application.LoadLevel("MainMenu");
+        //Application.Quit();
     }
 
     // pause game
@@ -108,6 +110,33 @@ public class InGameMenuController : MonoBehaviour
     public void Congratulations()
     {
         Time.timeScale = 0;
+        float score = 0;
+        int waveScore = dataController.PlayerWave;
+        float killScore = dataController.PlayerKill;
+        int killDigit = 0;
+        int someNumber = 1;
+        for (int i = 1; i < 1000000; i++)
+        {
+            if(killScore >= someNumber)
+            {
+                killDigit++;
+            }
+            else if (killScore < someNumber)
+            {
+                break;
+            }
+
+            someNumber *= 10;
+        }
+
+        killScore = killScore / (10 * killDigit);
+        score = waveScore + killScore;
+        Debug.Log("wave = " + waveScore);
+        Debug.Log("killdigit = " + killDigit);
+        Debug.Log("kill = " + killScore);
+        Debug.Log("score = " + score);
+        masterData.AddScore(score);
+        
         congratsLayer.SetActive(true);
         //Debug.Log("congrats");
     }

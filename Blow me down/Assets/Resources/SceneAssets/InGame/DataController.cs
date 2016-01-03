@@ -7,6 +7,7 @@ public class DataController : MonoBehaviour
     private int money;
     private int wave;
     private int miniWave;
+    private int playerKill;
 
     // piratespawnercontroller
     private PirateSpawnerController pirateSpawnerController;
@@ -40,13 +41,19 @@ public class DataController : MonoBehaviour
     public int PlayerWave
     {
         get { return wave; }
-		set { wave = value; }
+        set { wave = value; }
     }
 
     public int PlayerMiniWave
     {
         get { return miniWave; }
-		set { miniWave = value; }
+        set { miniWave = value; }
+    }
+
+    public int PlayerKill
+    {
+        get { return playerKill; }
+		set { playerKill = value; }
     }
 
     //
@@ -55,6 +62,7 @@ public class DataController : MonoBehaviour
         money = 0;
         wave = 1;
         miniWave = 1;
+        playerKill = 0;
 
         pirateSpawnerController = GameObject.Find("PirateSpawnerController").GetComponent<PirateSpawnerController>();
         numberOfPirates = 0;
