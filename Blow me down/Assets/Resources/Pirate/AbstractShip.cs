@@ -23,6 +23,7 @@ public abstract class AbstractShip : MonoBehaviour, IShip
     private PirateSpawnerController pirateSpawnerController;
     private ActionButtonController actionButtonController;
     private MasterData masterData;
+    private DataController dataController;
 
     // Use this for initialization
     void Start()
@@ -62,6 +63,7 @@ public abstract class AbstractShip : MonoBehaviour, IShip
         destroyed = false;
         actionButtonController = GameObject.Find("ActionButtonController").GetComponent<ActionButtonController>();
         masterData = GameObject.Find("MasterData").GetComponent<MasterData>();
+        dataController = GameObject.Find("DataController").GetComponent<DataController>();
     }
 
     public void Move()
@@ -107,6 +109,8 @@ public abstract class AbstractShip : MonoBehaviour, IShip
             masterData.killCount[this.GetId()]++;
             masterData.SaveKillCount(this.GetId());
         }
+        dataController.PlayerKill++;
+        Debug.Log("kill = " + dataController.PlayerKill);
         GameObject.Destroy(this.gameObject);
     }
 

@@ -64,12 +64,12 @@ public class PirateSpawnerController : MonoBehaviour
 				if (delayCounter >= delayBasicPirate[i]) {
 					GameObject spawnedPirate = Instantiate(basicPirate);
 					spawnedPirate.transform.position = spawnPositionArray[i];
-					print(i);
+					//print(i);
 					spawnedPirate.GetComponent<IShip>().SetSpawner(this.GetComponent<PirateSpawnerController>());
 					pirates.Add(spawnedPirate);
 					delayBasicPirate[i] += randomController.RangeRandomGenerator(1);
 					countBasicPirate[i]--;
-					print (delayBasicPirate[i]);
+					//print (delayBasicPirate[i]);
 					if (countBasicPirate[i] == 0){
 						delayBasicPirate[i] = 0;
 					}
@@ -79,12 +79,12 @@ public class PirateSpawnerController : MonoBehaviour
 				if (delayCounter >= delayMediumPirate[i]) {
 					GameObject spawnedPirate = Instantiate(mediumPirate);
 					spawnedPirate.transform.position = spawnPositionArray[i];
-					print(i);
+					//print(i);
 					spawnedPirate.GetComponent<IShip>().SetSpawner(this.GetComponent<PirateSpawnerController>());
 					pirates.Add(spawnedPirate);
 					delayMediumPirate[i] += randomController.RangeRandomGenerator(2);
 					countMediumPirate[i]--;
-					print (delayMediumPirate[i]);
+					//print (delayMediumPirate[i]);
 					if (countMediumPirate[i] == 0){
 						delayMediumPirate[i] = 0;
 					}
@@ -94,12 +94,12 @@ public class PirateSpawnerController : MonoBehaviour
 				if (delayCounter >= delayBossPirate[i]) {
 					GameObject spawnedPirate = Instantiate(bossPirateOne);
 					spawnedPirate.transform.position = spawnPositionArray[i];
-					print(i);
+					//print(i);
 					spawnedPirate.GetComponent<IShip>().SetSpawner(this.GetComponent<PirateSpawnerController>());
 					pirates.Add(spawnedPirate);
 					delayBossPirate[i] += randomController.RangeRandomGenerator(3);
 					countBossPirate[i]--;
-					print (delayBossPirate[i]);
+					//print (delayBossPirate[i]);
 					if (countBossPirate[i] == 0){
 						delayBossPirate[i] = 0;
 					}

@@ -6,7 +6,9 @@ public class MasterData : MonoBehaviour
 {
     public List<GameObject> piratePrefabs;
     public List<int> killCount;
+    public List<float> highScores;
     public int pirateType;
+    public int maxHighScore = 8;
 
     public bool developerMode = false;
     public static bool isMasterDataPresent = false;
@@ -24,6 +26,7 @@ public class MasterData : MonoBehaviour
     {
         pirateType = 3;
         InitKillCount();
+        InitHighScore();
 	}
 	
 	// Update is called once per frame
@@ -52,9 +55,71 @@ public class MasterData : MonoBehaviour
         }
     }
 
+    public void InitHighScore()
+    {
+        highScores = new List<float>(maxHighScore);
+        for (int i = 0; i < maxHighScore; i++)
+        {
+            if (!PlayerPrefs.HasKey("HighScore" + i))
+            {
+                PlayerPrefs.SetFloat("HighScore" + i, 0);
+                highScores.Add(0.0f);
+            }
+            else
+            {
+                highScores.Add(PlayerPrefs.GetFloat("HighScore" + i));
+            }
+            Debug.Log("hc " + i + " = " + highScores[i]);
+        }
+    }
+
     public void SaveKillCount(int idx)
     {
         Debug.Log("save id " + idx + " value = " + killCount[idx]);
         PlayerPrefs.SetInt("KillCount" + idx, killCount[idx]);
+    }
+
+    public void AddScore(float score)
+    {
+        Stack<float> tmpHighScores = new Stack<float>();
+        bool isScorePushed = false;
+
+        highScores.Reverse();
+        foreach (float highScore in highScores)
+        {
+            if (tmpHighScores.Count >= maxHighScore)
+                break;
+
+            if (!isScorePushed)
+            {
+                if (highScore > score)
+                    tmpHighScores.Push(highScore);
+                else if (highScore <= score)
+                {
+                    tmpHighScores.Push(score);
+                    tmpHighScores.Push(highScore);
+                    isScorePushed = true;
+                }
+            }
+            else
+                tmpHighScores.Push(highScore);
+        }
+
+        int stackSize = tmpHighScores.Count;
+        highScores.Clear();
+        for (int i = 0; i < stackSize; i++)
+        {
+            Debug.Log("saved hs " +  i + " = " + tmpHighScores.Peek());
+            highScores.Add(tmpHighScores.Pop());
+        }
+
+        highScores.Reverse();
+        SaveHighScores();
+    }
+
+    public void SaveHighScores()
+    {
+        for (int i = 0; i < highScores.Count; i++)
+            PlayerPrefs.SetFloat("HighScore" + i, highScores[i]);
     }
 }
