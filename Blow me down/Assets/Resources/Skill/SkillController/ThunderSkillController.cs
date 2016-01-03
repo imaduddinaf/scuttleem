@@ -8,6 +8,8 @@ public class ThunderSkillController : MonoBehaviour, ISkillController
     private GameObject spawnArea;
     private Vector2 spawnPosition;
 
+	public AudioClip thunderSound;
+
     //attribute
     public GameObject thunderSkill;
     public float cooldown;
@@ -65,6 +67,7 @@ public class ThunderSkillController : MonoBehaviour, ISkillController
             GameObject spawnedSkill = (GameObject)Instantiate(thunderSkill);
             spawnedSkill.transform.position = pos;
             spawnArea.GetComponent<ContainerController>().Close();
+			GetComponent<AudioSource> ().PlayOneShot (thunderSound);
             state = DELAY;
         }
     }

@@ -7,6 +7,8 @@ public class SkillController : MonoBehaviour
     public GameObject iceSkillController;
     public GameObject thunderSkillController;
 
+	public AudioClip freezeSound;
+
 	// Use this for initialization
 	void Start () 
     {
@@ -26,6 +28,7 @@ public class SkillController : MonoBehaviour
 
     public void DoIceSkill()
     {
+		GetComponent<AudioSource> ().PlayOneShot (freezeSound);
         iceSkillController.GetComponent<ISkillController>().SpawnSkill();
     }
 

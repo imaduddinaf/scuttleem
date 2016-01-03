@@ -8,6 +8,8 @@ public class FireSkillController : MonoBehaviour, ISkillController
     private GameObject laneSelector;
     private List<Vector2> spawnPosition;
 
+	public AudioClip fireSound;
+
     //attribute
     public GameObject fireSkill;
     public float cooldown;
@@ -65,6 +67,8 @@ public class FireSkillController : MonoBehaviour, ISkillController
         GameObject spawnedSkill = (GameObject)Instantiate(fireSkill);
         spawnedSkill.transform.position = spawnPosition[3 - i];
         laneSelector.GetComponent<ContainerController>().Close();
+		GetComponent<AudioSource> ().PlayOneShot (fireSound);
+		print("mon");
         state = DELAY;
     }
 

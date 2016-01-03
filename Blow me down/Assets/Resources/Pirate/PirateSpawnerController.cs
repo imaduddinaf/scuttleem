@@ -110,7 +110,7 @@ public class PirateSpawnerController : MonoBehaviour
 			}
 		}
 		if (countDestroyShip == randomController.totalShip) {
-			print ("test");
+			//print ("test");
 			countDestroyShip = 0;
 			randomController.totalShip = 0;
 			Invoke("SetAmountPirate",3.0f);
@@ -139,8 +139,7 @@ public class PirateSpawnerController : MonoBehaviour
         LoadPirate();
 		for (int i = 0; i < 4; i++) {
 			countBasicPirate[i] = randomController.amountBasicPirate;
-			delayBasicPirate[i] = (i+1)*5;
-			print (delayBasicPirate[i]);
+			delayBasicPirate[i] = (i+1)*2 + randomController.RangeRandomGenerator(1);
 		}
 
     }
@@ -161,7 +160,6 @@ public class PirateSpawnerController : MonoBehaviour
 			delayBossPirate[index] = randomController.RangeRandomGenerator(3);
 		}
 		delayCounter = 0.0f;
-		print (randomController.amountBasicPirate);
 	}
 
     // init spawner
