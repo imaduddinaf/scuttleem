@@ -99,8 +99,9 @@ public class MainMenuController : MonoBehaviour
             sWave.text = strScore[0];
             if (strScore.Length < 2)
                 sKill.text = "0";
-            else
-                sKill.text = strScore[1];
+			else{
+				sKill.text = strScore[1];
+			} 
         }
     }
 

@@ -32,7 +32,7 @@ public class FireSkillController : MonoBehaviour, ISkillController
 	void Start () 
     {
         //attribute
-        timePassed = 0;
+        timePassed = cooldown;
         state = IDLE;
 
         //get
@@ -90,16 +90,16 @@ public class FireSkillController : MonoBehaviour, ISkillController
 
     public void CooldownHandler()
     {
-        if (timePassed > cooldown)
+        if (timePassed < 0)
         {
-            timePassed = 0;
+            timePassed = cooldown;
             state = IDLE;
             this.EnableButton();
             textDelay.text = READY;
         }
         if (state == DELAY)
         {
-            timePassed += Time.deltaTime;
+            timePassed -= Time.deltaTime;
             int tmp = (int)timePassed;
             textDelay.text = tmp.ToString();
         }

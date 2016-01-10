@@ -31,7 +31,6 @@ public class MusicController : MonoBehaviour {
 	void Update () {
 		if (Application.loadedLevelName == "MainMenu" || Application.loadedLevelName == "Ensiklopedia") {
 			if (!mainMenuPlayed) {
-				print ("asd");
 				musicSource.Stop ();
 				musicSource.clip = musicClip [0];
 				musicSource.Play ();
@@ -40,7 +39,6 @@ public class MusicController : MonoBehaviour {
 			}
 		} 
 		else if (Application.loadedLevelName == "InGame") {
-			print ("bb");
 			if (!inGamePlayed) {
 				musicSource.Stop ();
 				musicSource.clip = musicClip [1];

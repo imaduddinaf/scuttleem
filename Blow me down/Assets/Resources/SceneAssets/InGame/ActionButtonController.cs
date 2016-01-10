@@ -63,7 +63,6 @@ public class ActionButtonController : MonoBehaviour
     {
         //blueCannon = GameObject.FindGameObjectWithTag("BlueCannon");
         cannons[3].GetComponent<ICannon>().Attack();
-		print ("1");
 		GetComponent <AudioSource> ().PlayOneShot (explosionCannon);
     }
 

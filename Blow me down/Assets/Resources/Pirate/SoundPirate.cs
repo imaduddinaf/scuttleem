@@ -12,7 +12,7 @@ public class SoundPirate : MonoBehaviour {
 	}
 
 	public void SoundPirates(int x){
-		if (x == 0 || x == 1) {
+		if (x == 0 || x == 1 || x == 2) {
 			GetComponent <AudioSource> ().PlayOneShot (soundBasic);
 		}
 	}

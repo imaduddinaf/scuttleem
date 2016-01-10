@@ -144,7 +144,7 @@ public class InGameMenuController : MonoBehaviour
         }
 
         if(killDigit > 0)
-            killScore = killScore / (10 * killDigit);
+            killScore = killScore / 1000;
         score = waveScore + killScore;
         Debug.Log("wave = " + waveScore);
         Debug.Log("killdigit = " + killDigit);

@@ -74,6 +74,7 @@ public class MasterData : MonoBehaviour
             Debug.Log("hc " + i + " = " + highScores[i]);
         }
         highScores.Sort();
+		highScores.Reverse ();
         SaveHighScores();
     }
 
@@ -99,6 +100,7 @@ public class MasterData : MonoBehaviour
         highScores.Add(score);
         highScores.Sort();
         highScores.RemoveAt(0);
+		highScores.Reverse ();
         SaveHighScores();
     }
 

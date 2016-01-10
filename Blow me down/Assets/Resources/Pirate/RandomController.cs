@@ -28,6 +28,22 @@ public class RandomController : MonoBehaviour {
 	// datacontroller
 	DataController dataController;
 
+	void Awake (){
+		amountBasicPirate = 3;
+		amountBossPirate = 0;
+		amountMediumPirate = 0;
+		totalShip = amountBasicPirate * 4;
+
+		minBasicPirate = 5.0f;
+		maxBasicPirate = 15.0f;
+		minMediumPirate = 15.0f;
+		maxMediumPirate = 30.0f;
+		minBossPirate = 60.0f;
+		maxBossPirate = 80.0f;
+		flagMiniWave = 0;
+		waveTime = 0.0f;
+	}
+
 	// Use this for initialization
 	void Start () {
 		Init ();
@@ -101,20 +117,7 @@ public class RandomController : MonoBehaviour {
 		miniWave = dataController.PlayerMiniWave;
 
 		//noBasicPirate = 0;
-
-		amountBasicPirate = 3;
-		amountBossPirate = 0;
-		amountMediumPirate = 0;
-		totalShip = amountBasicPirate * 4;
-
-		minBasicPirate = 5.0f;
-		maxBasicPirate = 15.0f;
-		minMediumPirate = 15.0f;
-		maxMediumPirate = 30.0f;
-		minBossPirate = 60.0f;
-		maxBossPirate = 80.0f;
-		flagMiniWave = 0;
-		waveTime = 0.0f;
+		
 	}
 
 	void SetAmountPirates () {

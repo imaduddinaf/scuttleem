@@ -28,7 +28,7 @@ public class IceSkillController : MonoBehaviour, ISkillController
     {
         //attr set
         //cooldown = 10;
-        timePassed = 0;
+        timePassed = cooldown;
         state = IDLE;
 
         //get
@@ -82,16 +82,16 @@ public class IceSkillController : MonoBehaviour, ISkillController
 
     public void CooldownHandler()
     {
-        if (timePassed > cooldown)
+        if (timePassed < 0)
         {
-            timePassed = 0;
+            timePassed = cooldown;
             state = IDLE;
             this.EnableButton();
             textDelay.text = READY;
         }
         if (state == DELAY)
         {
-            timePassed += Time.deltaTime;
+            timePassed -= Time.deltaTime;
             int tmp = (int)timePassed;
             textDelay.text = tmp.ToString();
         }

@@ -4,8 +4,6 @@ using System.Collections;
 public class MediumPirate : AbstractShip
 {
     public int id = 1;
-	public int done = 2;
-	public AudioClip soundDieMedium;
 
     public override int GetId()
     {
